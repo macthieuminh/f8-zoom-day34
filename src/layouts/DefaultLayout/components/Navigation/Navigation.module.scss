@@ -1,0 +1,18 @@
+.wrapper {
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0 20px;
+    }
+    li {
+        padding: 0 20px;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+.active {
+    color: red;
+    font-weight: 600;
+}
