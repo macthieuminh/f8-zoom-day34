@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import styles from "./ProfileCard.module.scss"
-function ProfileCard() {
+export default function ProfileCard() {
     const [user, setUser] = useState(null)
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users/1")
@@ -46,5 +46,3 @@ function ProfileCard() {
         </section>
     )
 }
-
-export default ProfileCard

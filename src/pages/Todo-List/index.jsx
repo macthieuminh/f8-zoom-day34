@@ -2,7 +2,7 @@ import { useState } from "react"
 import styles from "./Todo-List.module.scss"
 let uniqId = 0
 
-function TodoList() {
+export default function TodoList() {
     const [inputValue, setInputValue] = useState("")
     const [todos, setTodos] = useState([])
 
@@ -86,5 +86,3 @@ function TodoList() {
         </section>
     )
 }
-
-export default TodoList

@@ -10,7 +10,7 @@ import Weather from "../../pages/Weather"
 import DefaultLayout from "../../layouts/DefaultLayout"
 import SiderbarLayout from "../../layouts/SidebarLayout"
 
-function AppRoutes() {
+export default function AppRoutes() {
     return (
         <Router>
             <Routes>
@@ -23,12 +23,7 @@ function AppRoutes() {
                     <Route path="/productlist" element={<ProductList />} />
                     <Route path="/weather" element={<Weather />} />
                 </Route>
-                {/* <Route element={<SiderbarLayout />}>
-                    
-                </Route> */}
             </Routes>
         </Router>
     )
 }
-
-export default AppRoutes
