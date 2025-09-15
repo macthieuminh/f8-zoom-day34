@@ -8,11 +8,10 @@ import ProductList from "../../pages/ProductList"
 import Comment from "../../pages/Comment"
 import Weather from "../../pages/Weather"
 import DefaultLayout from "../../layouts/DefaultLayout"
-import SiderbarLayout from "../../layouts/SidebarLayout"
 
 export default function AppRoutes() {
     return (
-        <Router>
+        <Router basename="/f8-zoom-day34">
             <Routes>
                 <Route element={<DefaultLayout />}>
                     <Route index element={<Home />} />
